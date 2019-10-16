@@ -10,5 +10,7 @@ public class Mover : MonoBehaviour
     {
         rBody = GetComponent<Rigidbody2D>();
         rBody.velocity = Vector2.right * speed;
+
+        Destroy(gameObject, 1f);
     }
 }
